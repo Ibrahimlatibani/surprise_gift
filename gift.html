@@ -7,36 +7,78 @@
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background: radial-gradient(circle, #fff5f8, #ffe6eb);
+      background: radial-gradient(circle, #e0f7ff, #ffffff);
       text-align: center;
       padding: 40px;
-      color: #333;
+      color: #2c3e50;
+      opacity: 0;
+      animation: fadeInBody 1.2s ease-in forwards;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     h1 {
-      color: #e91e63;
+      color: #0077b6;
       font-size: 2em;
       margin-top: 40px;
     }
 
     p {
       font-size: 1.2em;
-      color: #444;
+      color: #34495e;
+      margin-bottom: 20px;
     }
 
     img {
-      margin-top: 30px;
+      margin-top: 20px;
       max-width: 90%;
       width: 400px;
       border-radius: 10px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      opacity: 0;
+      transform: scale(0.8);
+      animation: popIn 1s ease-out forwards;
+      animation-delay: 0.8s;
+    }
+
+    @keyframes popIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      70% {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 25px;
+      text-decoration: none;
+      color: white;
+      background-color: #00a8e8;
+      padding: 12px 25px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    a:hover {
+      background-color: #0096c7;
     }
   </style>
-</head>
+</head>	
 <body>
+
   <img src="abhishek_upmanyu.png" alt="Stand-up Comedy Tickets">
+  <br>
+  <a href="index.html">← Back</a>
 </body>
 </html>
-
-
-
